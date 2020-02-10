@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.topnav {
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.topnav div:not(:first-child) {
+    padding-left: 15px;
+    border-right: 1px solid white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.customer-number {
+    width: 80%;
+    border-right: 1px solid white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.customer-number p {
+    width: 100%;
+    padding-left: 13%;
+}
+
+.currency-type,
+.my-account,
+.search {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.topnav a {
+    color:white;
+}
+
+.menu-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+
+.menu,
+.communicate {
+    display: flex;
+    justify-content: flex-start;
+    width: 85%;
+    height: 100%;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: left;;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.purch-info {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.purch-info div {
+    height: 30px;
+    width: 90%;
+    border: 1px solid black;
+}
+
+.credit-card p,
+.sum-and-items p {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.posters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.ellipse {
+    margin: 2% 0px;
+}
+
+.communicate-container {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ededed;
+}
+
+.email-info,    
+.communicate form,
+.social-networks {
+    display: flex;
+    align-items: center;
+}
+
+.email-info {
+    flex-grow: 1;
+}
+
+.stay-updated,
+.find-us {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.email-container {
+    margin-left: 10px;
+    width: 190px; 
+    border: 1px solid white; 
+    min-height: 20px;
+    max-height: 20px;
+    background-color: white;
+}
+
+#email {
+    border: none;
+    font-style: italic;
+    text-align: center;
+    color: #cac8c8;
+    background-color: white;
+    
+}
+
+
+#submit {
+    border: none;
+    text-align: right;
+    background-color: white;
+}
+
+.find-us {
+    margin-right: 10px;
+}
+
+.imgs {
+    display: flex;
+    height: 100%;
+}
+
+.facebook,
+.telegram {
+    width: 1fr;
+    background-color: #f7f7f7;
+}
+
+.twitter {
+    width: 1fr;
+    background-color: #ededed;
+}
+
+.collection-imgs-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 320px;
+}
+
+.collection-imgs {
+    width: 85%;
+    height: 100%;
+    display: flex;
+}
+
+.half-img  {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.half-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.fourth-img {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.eight-img {
+    width: 50%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1550px) {
+    .customer-number {
+        width: 72%;
+    } 
+}
+
+@media screen and (max-width: 1200px) {
+    .customer-number {
+        width: 65%;
+    } 
+    .menu {
+        width: 96%;
+    }
+
+}
+
+@media screen and (max-width: 850px ) {
+    .customer-number {
+        width: 58%;
+    } 
+}
+
+@media screen and (max-width: 660px) {
+
+    .topnav {
+        min-width: 470px;
+        background-color: white;
+    }
+
+    .topnav div{
+        justify-content: center;
+    }
+
+    .topnav div:not(:first-child) {
+        background-color: black;
+    }
+    
+    .customer-number {
+        /*display: none;*/
+        width: 100%;
+    }
+
+    .customer-number p {
+        padding-left: 0%;
+        color: #838383;
+        display: flex;
+        justify-content: center;
+    }
+
+    .currency-type {
+        width: 15%;
+    }
+
+
+    .my-account {
+        width: 50%;
+    }
+
+    .search {
+        width: 15%;
+        flex-grow: 1;
+        border-color: black;
+    }
+
+}
