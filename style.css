@@ -63,6 +63,7 @@ a {
 .communicate {
     display: flex;
     justify-content: flex-start;
+    max-width: 970px;
     width: 85%;
     height: 100%;
 }
@@ -205,6 +206,7 @@ nav {
 }
 
 .collection-imgs {
+    max-width: 970px;
     width: 85%;
     height: 100%;
     display: flex;
@@ -233,6 +235,258 @@ nav {
     width: 50%;
     height: 100%;
 }
+
+.left-border {
+    border-left: 2px solid white;
+}
+
+.right-border {
+    border-right: 2px solid white;
+}
+
+.top-border {
+    border-top: 2px solid white;
+    box-sizing: border-box;
+}
+
+.bottom-border {
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
+}
+
+.catalog-categories-container {
+    margin-top: 50px;
+    width: 100%;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+}
+
+.catalog-categories {
+    max-width: 970px;
+    width: 85%;
+    height: 100%;
+    display: flex;
+}
+
+.categories {
+    width: 50%;
+    display: flex;
+    flex-grow: 1;
+}
+
+.category-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.what-hot {
+    background-color: #e29276;
+    color: white;
+}
+
+.button-left,
+.button-right {
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-left {
+    color: #979797;
+    background-color: #f2f2f2;
+}
+
+.button-right {
+    color: white;
+    background-color: #e29276;
+}
+
+.not-selected-item {
+    color:black;
+    background-color: white;
+}
+
+.selected-item {
+    color: white;
+    background-color: #e29276;
+}
+
+.list-clothes-container {
+    margin-bottom: 25px;
+    width: 100%;
+    height: 455px;
+    display: flex;
+    align-items: center;
+    background-color: #e29276;
+}
+
+.list-clothes {
+    width: 100%;
+    height: 396px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.list-clothes::-webkit-scrollbar {
+    display: none;
+}
+
+.list-clothes.not-selected-item {
+    display: none;
+}
+
+.list-clothes.selected-item {
+    display: flex;
+}
+
+.thing-card {
+    margin-left: 30px;
+    width: 220px;
+    height: 100%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.thing-card:hover {
+    
+}
+
+.img-thing {
+    width: 100%;
+    height: 290px;
+}
+
+.img-thing img {
+    width: 100%;
+    height: 100%;
+}
+
+.thing-info {
+    width: 100%;
+    height: 106px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+    color: black;
+}
+
+.thing-name {
+    font-size: 18px;
+}
+
+.thing-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #e29276;
+}
+
+.add-to-cart a {
+    width: 120px;
+    text-align: center;
+    display: block;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    border:#e29276 1px solid;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: .5s;
+    border-radius: 0px;
+}
+
+.add-to-cart a:hover {
+    box-shadow: 0px -5px 0 #dd6b44 inset;
+}
+
+.list-sale-clothes-container {
+    height: 600px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.sale-label {
+    margin-bottom: 25px;
+}
+
+.list-sale-clothes {
+    max-width: 970px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-sale-clothes .thing-card {
+    margin-left: 0px;
+}
+
+.brands-container {
+    margin-top: 60px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.brands {
+    max-width: 970px;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.list-brands {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand {
+    height: 90px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    height: 160px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-border {
+    max-width: 970px;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.about-border h2 {
+    padding-bottom: 10px;
+}
+
 
 @media screen and (max-width: 1550px) {
     .customer-number {
